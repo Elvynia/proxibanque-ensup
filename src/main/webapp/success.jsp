@@ -45,4 +45,3 @@
      	<input type="submit" class="redirection" onclick="window.location.href = 'index.jsp';" value="Retour au login"/>
      </div>
 </body>
-</html>

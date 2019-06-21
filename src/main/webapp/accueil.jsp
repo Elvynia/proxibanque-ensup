@@ -12,4 +12,3 @@
     <p>L'utilisateur est bien sauvegardé</p>
 	
 </body>
-</html>

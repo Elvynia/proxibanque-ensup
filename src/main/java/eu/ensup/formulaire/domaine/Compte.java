@@ -8,12 +8,10 @@ public class Compte {
 	private Float solde;
 	private Date dateOuverture;
 	private boolean type;
-	
+
 	public Compte() {
 		super();
 	}
-	
-	
 
 	public Compte(String numCompte, Float solde, Date dateOuverture, boolean type) {
 		super();
@@ -23,44 +21,42 @@ public class Compte {
 		this.type = type;
 	}
 
-
-
-	@Override
-	public String toString() {
-		return "Compte [numCompte=" + numCompte + ", solde=" + solde + ", dateOuverture=" + dateOuverture + ", type="
-				+ type + "]";
+	public Date getDateOuverture() {
+		return this.dateOuverture;
 	}
 
 	public String getNumCompte() {
-		return numCompte;
-	}
-
-	public void setNumCompte(String numCompte) {
-		this.numCompte = numCompte;
+		return this.numCompte;
 	}
 
 	public float getSolde() {
-		return solde;
+		return this.solde;
 	}
 
-	public void setSolde(float solde) {
-		this.solde = solde;
-	}
-
-	public Date getDateOuverture() {
-		return dateOuverture;
+	public boolean isType() {
+		return this.type;
 	}
 
 	public void setDateOuverture(Date dateOuverture) {
 		this.dateOuverture = dateOuverture;
 	}
 
-	public boolean isType() {
-		return type;
+	public void setNumCompte(String numCompte) {
+		this.numCompte = numCompte;
+	}
+
+	public void setSolde(float solde) {
+		this.solde = solde;
 	}
 
 	public void setType(boolean type) {
 		this.type = type;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Compte [numCompte=" + this.numCompte + ", solde=" + this.solde + ", dateOuverture=" + this.dateOuverture
+				+ ", type=" + this.type + "]";
+	}
+
 }

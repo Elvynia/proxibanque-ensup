@@ -174,5 +174,4 @@ public class ConseillerDao extends AccesBd {
 		seDeconnecter();
 		return listeCompte;
 	}
-
 }

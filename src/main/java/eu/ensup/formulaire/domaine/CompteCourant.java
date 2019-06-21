@@ -9,18 +9,17 @@ public class CompteCourant extends Compte {
 		this.decouvert = decouvert;
 	}
 
-	@Override
-	public String toString() {
-		return "CompteCourant [decouvert=" + decouvert + "]";
-	}
-
 	public float getDecouvert() {
-		return decouvert;
+		return this.decouvert;
 	}
 
 	public void setDecouvert(float decouvert) {
 		this.decouvert = decouvert;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "CompteCourant [decouvert=" + this.decouvert + "]";
+	}
+
 }

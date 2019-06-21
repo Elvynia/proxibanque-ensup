@@ -9,7 +9,7 @@ public class Personne {
 	private int codePostal;
 	private String ville;
 	private int telephone;
-	
+
 	public Personne() {
 		super();
 	}
@@ -24,54 +24,67 @@ public class Personne {
 		this.ville = ville;
 		this.telephone = telephone;
 	}
-	
-	@Override
-	public String toString() {
-		return "Personne [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + ", codePostal="
-				+ codePostal + ", ville=" + ville + ", telephone=" + telephone + "]";
+
+	public String getAdresse() {
+		return this.adresse;
+	}
+
+	public int getCodePostal() {
+		return this.codePostal;
 	}
 
 	public String getId() {
-		return id;
+		return this.id;
 	}
-	public void setId(String id) {
-		this.id = id;
-	}
+
 	public String getNom() {
-		return nom;
+		return this.nom;
 	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
+
 	public String getPrenom() {
-		return prenom;
+		return this.prenom;
 	}
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
+
+	public int getTelephone() {
+		return this.telephone;
 	}
-	public String getAdresse() {
-		return adresse;
+
+	public String getVille() {
+		return this.ville;
 	}
+
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
-	public int getCodePostal() {
-		return codePostal;
-	}
+
 	public void setCodePostal(int codePostal) {
 		this.codePostal = codePostal;
 	}
-	public String getVille() {
-		return ville;
+
+	public void setId(String id) {
+		this.id = id;
 	}
-	public void setVille(String ville) {
-		this.ville = ville;
+
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
-	public int getTelephone() {
-		return telephone;
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
 	}
+
 	public void setTelephone(int telephone) {
 		this.telephone = telephone;
 	}
-	
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+
+	@Override
+	public String toString() {
+		return "Personne [id=" + this.id + ", nom=" + this.nom + ", prenom=" + this.prenom + ", adresse=" + this.adresse
+				+ ", codePostal=" + this.codePostal + ", ville=" + this.ville + ", telephone=" + this.telephone + "]";
+	}
+
 }
