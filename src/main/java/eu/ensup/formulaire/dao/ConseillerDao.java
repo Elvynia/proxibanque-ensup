@@ -19,9 +19,11 @@ public class ConseillerDao extends AccesBd {
 	public boolean creationClient(Personne personne, String idConseiller) {
 		seConnecter();
 		try {
+			String prenomVal = personne.getPrenom() != null ? "'" + personne.getPrenom() + "'" : "null";
+			String nomVal = personne.getNom() != null ? "'" + personne.getNom() + "'" : "null";
 			String sql = "INSERT INTO personne(`id`,`nom`,`prenom`,`adresse`, "
-					+ "`codePostal`, `ville`, `telephone`) values" + "('" + personne.getId() + "','" + personne.getNom()
-					+ "','" + personne.getPrenom() + "'," + "'" + personne.getAdresse() + "','"
+					+ "`codePostal`, `ville`, `telephone`) values" + "('" + personne.getId() + "'," + nomVal
+					+ "," + prenomVal + ",'" + personne.getAdresse() + "','"
 					+ personne.getCodePostal() + "'," + "'" + personne.getVille() + "','" + personne.getTelephone()
 					+ "');";
 			st.executeUpdate(sql);
